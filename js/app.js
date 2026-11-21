@@ -261,7 +261,7 @@
 
   /* ---------------- setup & login ---------------- */
   function renderSetup() {
-    $app.innerHTML = '<div class="login"><div class="logo">হি<span class="dot">.</span></div><h1>' + t('apiSetup') + '</h1>' +
+    $app.innerHTML = '<div class="login"><img class="logo-img" src="icons/icon-192.png" alt="Hishab Kitab"><h1>' + t('apiSetup') + '</h1>' +
       '<div class="tl small" style="max-width:340px">' + t('apiHint') + '</div>' +
       '<div style="width:100%;max-width:420px"><input id="apiurl" class="input" placeholder="https://script.google.com/macros/s/…/exec" value="' + esc(S.api) + '">' +
       '<button class="btn block" style="margin-top:12px" id="apigo">' + t('connect') + '</button></div>' + footer() + '</div>';
@@ -279,7 +279,7 @@
   function renderLogin() {
     var sel = S.prefs.lastUser || '', pin = '';
     function draw() {
-      $app.innerHTML = '<div class="login"><div class="logo">হি<span class="dot">.</span></div><h1>' + t('appName') + '</h1><div class="tl">' + t('tagline') + '</div>' +
+      $app.innerHTML = '<div class="login"><img class="logo-img" src="icons/icon-192.png" alt="Hishab Kitab"><h1>' + t('appName') + '</h1><div class="tl">' + t('tagline') + '</div>' +
         '<div class="muted small" style="margin-bottom:10px">' + t('whoAreYou') + '</div><div class="users">' +
         [['Husband', '👨'], ['Wife', '👩']].map(function (u) { return '<button class="user-btn ' + (sel === u[0] ? 'on' : '') + '" data-u="' + u[0] + '"><span class="ue">' + u[1] + '</span>' + userLabel(u[0]) + '</button>'; }).join('') +
         '</div>' + (sel ? '<div class="muted small" style="margin-top:20px">' + t('enterPin') + '</div><div class="pin-dots" id="dots"></div><div class="pin-err" id="perr"></div>' +

@@ -28,6 +28,8 @@ a { color: var(--primary); }
   font-size: 38px; font-weight: 700; margin: 0 auto; box-shadow: 0 6px 20px rgba(15, 107, 99, .35); }
 .logo .dot, .boot-logo .dot { color: var(--accent); }
 
+.logo-img { width: 80px; height: 80px; border-radius: 22px; display: block; margin: 0 auto; box-shadow: 0 6px 20px rgba(15, 107, 99, .3); }
+
 /* layout */
 .shell { max-width: 980px; margin: 0 auto; padding: 0 14px calc(var(--nav-h) + 24px + env(safe-area-inset-bottom)); }
 .topbar { position: sticky; top: 0; z-index: 20; background: var(--bg); padding: calc(10px + env(safe-area-inset-top)) 2px 8px;
