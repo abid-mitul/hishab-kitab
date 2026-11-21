@@ -1,5 +1,5 @@
 /* Hishab Kitab service worker — offline app shell */
-var VERSION = 'hk-v1';
+var VERSION = 'hk-v2';
 var SHELL = ['./', './index.html', './css/styles.css?v=1', './js/config.js?v=1', './js/i18n.js?v=1', './js/app.js?v=1',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
   './js/vendor/chart.umd.min.js'];
